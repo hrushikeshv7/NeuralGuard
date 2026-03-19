@@ -357,12 +357,8 @@ PHASE 7  ██████████  ✅  Logging System (threats · blocked
 ```
 ┌─────────────────────────────────────────────────┐
 │                                                 │
-│   shanks (haki)                                 │
-│   Korapothula Hrushikesh Vardhan                │
 │                                                 │
-│   IIT Kharagpur — B.Sc Chemistry               │
-│   Specialization: Cybersecurity & AI            │
-│   Certified Ethical Hacker — CEH v12            │
+│   Korapothula Hrushikesh Vardhan                │
 │                                                 │
 │   linkedin.com/in/hrushikesh-vardhan-975a5b29a  │
 │                                                 │
