@@ -1,0 +1,32 @@
+# NeuralGuard Configuration
+# Edit these settings to match your environment
+
+network:
+  interface: wlan0          # Network interface to monitor (wlan0, eth0, etc.)
+  dashboard_port: 5000      # Flask dashboard port
+
+detection:
+  port_scan_threshold: 20   # Unique ports before flagging as port scan
+  port_scan_rate: 5         # Packets/sec required to trigger port scan
+  syn_flood_ratio: 0.90     # SYN ratio threshold (0.0-1.0)
+  syn_flood_rate: 50        # Packets/sec to trigger SYN flood
+  ddos_threshold_mbps: 5    # MB/sec to trigger DDoS alert
+  brute_force_packets: 50   # Packets to auth port before flagging
+  brute_force_window: 15    # Time window (seconds) for brute force check
+  ghost_ttl_threshold: 8    # TTL below this = spoofed packet
+  null_scan_ports: 10       # Unique ports for NULL scan detection
+  xmas_scan_ports: 5        # Unique ports for XMAS scan detection
+  flow_reset_seconds: 60    # Reset flow tracker every N seconds
+
+blocking:
+  enabled: true             # Set false to detect only (no iptables blocking)
+  restore_on_start: true    # Reload previously blocked IPs on startup
+
+logging:
+  log_dir: logs/
+  threats_file: logs/threats.log
+  blocked_file: logs/blocked.log
+  sessions_file: logs/sessions.log
+
+display:
+  max_packets: 100          # Max packets shown in dashboard table

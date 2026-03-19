@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Models (too large for GitHub)
+models/*.pkl
+
+# Logs (personal data)
+logs/*.log
+
+# Data (raw captures)
+data/raw/*.pcap
+data/processed/*.csv
+
+# Virtual env
+venv/
+.env/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+
+# Scapy cache
+.scapy_cache
