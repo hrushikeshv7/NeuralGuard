@@ -30,6 +30,9 @@
 
 ---
 
+<img width="1635" height="793" alt="Screenshot_2026-03-27_12-17-36" src="https://github.com/user-attachments/assets/2fb7e1e7-659f-4841-a2c8-7968068a8f2d" />
+
+
 ## ◈ TRANSMISSION BEGIN
 
 > *"Most firewalls wait for the enemy to show an ID. NeuralGuard watches how they walk."*
@@ -52,42 +55,42 @@ All of this visualized through a **live cyberpunk dashboard** that looks like it
 │   PACKET ARRIVES                                                │
 │        │                                                        │
 │        ▼                                                        │
-│   ┌─────────────┐    private IP?  ──────────────► SKIP         │
-│   │  GATE CHECK │    whitelisted? ──────────────► SKIP         │
-│   │             │    own machine? ──────────────► SKIP         │
-│   │             │    outbound?    ──────────────► SKIP         │
-│   └──────┬──────┘                                              │
+│   ┌─────────────┐    private IP?  ──────────────► SKIP          │
+│   │  GATE CHECK │    whitelisted? ──────────────► SKIP          │
+│   │             │    own machine? ──────────────► SKIP          │
+│   │             │    outbound?    ──────────────► SKIP          │
+│   └──────┬──────┘                                               │
 │          │                                                      │
 │          ▼                                                      │
-│   ┌─────────────┐                                              │
-│   │ FLOW TRACKER│  tracks ports · SYNs · bytes · rate         │
-│   └──────┬──────┘  per-IP · resets every 60 seconds           │
+│   ┌─────────────┐                                               │
+│   │ FLOW TRACKER│  tracks ports · SYNs · bytes · rate           │
+│   └──────┬──────┘  per-IP · resets every 60 seconds             │
 │          │                                                      │
 │          ▼                                                      │
-│   ┌─────────────────────────────────────────┐                  │
-│   │           8-RULE ENGINE                 │                  │
+│   ┌─────────────────────────────────────────┐                   │
+│   │           8-RULE ENGINE                 │                   │
 │   │                                         │                  │
-│   │  ① PORT SCAN    ─── 20+ ports @ 5pkt/s │                  │
+│   │  ① PORT SCAN    ─── 20+ ports @ 5pkt/s  │                  │
 │   │  ② SYN FLOOD    ─── 90% SYN @ 50pkt/s  │                  │
-│   │  ③ DDoS         ─── 5MB/s sustained     │                  │
+│   │  ③ DDoS         ─── 5MB/s sustained    │                  │
 │   │  ④ BRUTE FORCE  ─── 50 pkts in 15s     │                  │
-│   │  ⑤ EXPLOIT PORT ─── 4444/6379/27017... │                  │
-│   │  ⑥ GHOST TTL   ─── TTL < 8 (spoofed)  │                  │
-│   │  ⑦ NULL SCAN    ─── flags=0, 10+ ports │                  │
-│   │  ⑧ XMAS SCAN    ─── FIN+PSH+URG flags  │                  │
-│   └────────────────────┬────────────────────┘                  │
+│   │  ⑤ EXPLOIT PORT ─── 4444/6379/27017... │                   │
+│   │  ⑥ GHOST TTL   ─── TTL < 8 (spoofed)  │                    │
+│   │  ⑦ NULL SCAN    ─── flags=0, 10+ ports │                   │
+│   │  ⑧ XMAS SCAN    ─── FIN+PSH+URG flags  │                   │
+│   └────────────────────┬────────────────────┘                   │
 │                        │                                        │
 │                   MALICIOUS?                                    │
-│               ┌────────┴────────┐                              │
+│               ┌────────┴────────┐                               │
 │              YES               NO                               │
 │               │                 │                               │
 │               ▼                 ▼                               │
-│         iptables DROP       BENIGN log                         │
-│         threats.log         dashboard                          │
-│         blocked.log                                            │
+│         iptables DROP       BENIGN log                          │
+│         threats.log         dashboard                           │
+│         blocked.log                                             │
 │               │                                                 │
 │               ▼                                                 │
-│         FLASK DASHBOARD ──► localhost:5000                     │
+│         FLASK DASHBOARD ──► localhost:5000                      │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
