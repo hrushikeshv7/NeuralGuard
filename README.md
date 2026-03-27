@@ -29,10 +29,6 @@
 </div>
 
 ---
-
-<img width="1635" height="793" alt="Screenshot_2026-03-27_12-17-36" src="https://github.com/user-attachments/assets/2fb7e1e7-659f-4841-a2c8-7968068a8f2d" />
-
-
 ## ◈ TRANSMISSION BEGIN
 
 > *"Most firewalls wait for the enemy to show an ID. NeuralGuard watches how they walk."*
@@ -44,6 +40,9 @@ It is a **hybrid intelligence system** — part machine learning, part rule-base
 All of this visualized through a **live cyberpunk dashboard** that looks like it belongs in Ghost in the Shell.
 
 ---
+
+<img width="1634" height="790" alt="Screenshot_2026-03-27_12-29-20" src="https://github.com/user-attachments/assets/700d313d-6c64-42a2-b2b9-a2574781fedd" />
+
 
 ## ◈ THREAT INTELLIGENCE OVERVIEW
 
