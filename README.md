@@ -135,7 +135,7 @@ All of this visualized through a **live cyberpunk dashboard** that looks like it
 
 ```bash
 # ── STEP 1: Clone the system ──────────────────────────
-git clone https://github.com/YOUR_USERNAME/neuralguard.git
+git clone https://github.com/hrushikeshv7/neuralguard.git
 cd neuralguard
 
 # ── STEP 2: Deploy dependencies ───────────────────────
