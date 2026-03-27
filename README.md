@@ -68,15 +68,15 @@ All of this visualized through a **live cyberpunk dashboard** that looks like it
 │          ▼                                                      │
 │   ┌─────────────────────────────────────────┐                   │
 │   │           8-RULE ENGINE                 │                   │
-│   │                                         │                  │
-│   │  ① PORT SCAN    ─── 20+ ports @ 5pkt/s  │                  │
-│   │  ② SYN FLOOD    ─── 90% SYN @ 50pkt/s  │                  │
-│   │  ③ DDoS         ─── 5MB/s sustained    │                  │
-│   │  ④ BRUTE FORCE  ─── 50 pkts in 15s     │                  │
-│   │  ⑤ EXPLOIT PORT ─── 4444/6379/27017... │                   │
-│   │  ⑥ GHOST TTL   ─── TTL < 8 (spoofed)  │                    │
-│   │  ⑦ NULL SCAN    ─── flags=0, 10+ ports │                   │
-│   │  ⑧ XMAS SCAN    ─── FIN+PSH+URG flags  │                   │
+│   │                                         │                   │
+│   │  ① PORT SCAN    ─── 20+ ports @ 5pkt/s │                    │
+│   │  ② SYN FLOOD    ─── 90% SYN @ 50pkt/s  │                    │
+│   │  ③ DDoS         ─── 5MB/s sustained    │                    │
+│   │  ④ BRUTE FORCE  ─── 50 pkts in 15s     │                    │
+│   │  ⑤ EXPLOIT PORT ─── 4444/6379/27017... │                    │
+│   │  ⑥ GHOST TTL   ─── TTL < 8 (spoofed)   │                    │
+│   │  ⑦ NULL SCAN    ─── flags=0, 10+ ports │                    │
+│   │  ⑧ XMAS SCAN    ─── FIN+PSH+URG flags  │                    │
 │   └────────────────────┬────────────────────┘                   │
 │                        │                                        │
 │                   MALICIOUS?                                    │
